@@ -16,7 +16,7 @@ const {links} = Astro.props;
     </div>
 
     <nav id="menu" class="hidden md:flex">
-        <ul class="flex space-x-6">
+        <ul class="flex">
             {links.map((link: { href: string | URL | null | undefined; text: unknown; }) => (
             <li>
             <a href={link.href} class="hover:text-gray-500">{link.text}</a>
