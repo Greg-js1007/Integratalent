@@ -1,0 +1,19 @@
+---
+import Header from '../components/Header.astro';
+import Layout from '../layouts/Layout.astro';
+import "../styles/global.css"; 
+
+
+const menuLinksHeaderIndex = [
+	{text:"Vacantes", href: "#vacantes"},
+	{text:"Nosotros", href: "#nosotros"},
+	{text:"Contacto", href: "#contacto"}
+]
+---
+
+<Layout title="Pagina de Inicio">
+	<Header links={menuLinksHeaderIndex}>
+
+	</Header>
+
+</Layout>
