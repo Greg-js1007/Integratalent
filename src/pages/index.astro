@@ -1,7 +1,7 @@
 ---
 import HeaderMenu from '../components/HeaderMenu.astro';
 import Layout from '../layouts/Layout.astro';
-import "../styles/global.css"; 
+import "../styles/global.css";
 
 const menuLinksHeaderIndex = [
 	{text:"Vacantes", href: "#vacantes"},
@@ -11,8 +11,6 @@ const menuLinksHeaderIndex = [
 ---
 
 <Layout title="Pagina de Inicio">
-	<HeaderMenu links={menuLinksHeaderIndex}>
-
+	<HeaderMenu links={menuLinksHeaderIndex} >
 	</HeaderMenu>
-
 </Layout>
