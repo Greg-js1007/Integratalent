@@ -2,9 +2,11 @@
 const {links} = Astro.props;
 ---
 
-<header id="" class="flex justify-between items-center py-4 px-6 relative">
-    <figure>
-        <h1>Novum RH</h1>
+<header id="" class="flex justify-between items-center py-4 px-6 relative min-w-xs" >
+    <figure id="container_logo" class="h-full w-32 md:w-44">
+        <a href="/src/pages/index.astro" class="w-full">
+          <img src="https://www.novumideas.com/images/novum/novum-logo-orange.png" alt="novum logo" class="h-full w-full">
+        </a>
     </figure>
 
     <div class="md:hidden">
@@ -16,7 +18,7 @@ const {links} = Astro.props;
     </div>
 
     <nav id="menu" class="hidden md:flex">
-        <ul class="flex">
+        <ul class="flex gap-3">
             {links.map((link: { href: string | URL | null | undefined; text: unknown; }) => (
             <li>
             <a href={link.href} class="hover:text-gray-500">{link.text}</a>
