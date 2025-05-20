@@ -1,8 +1,7 @@
 ---
-import Header from '../components/Header.astro';
+import HeaderMenu from '../components/HeaderMenu.astro';
 import Layout from '../layouts/Layout.astro';
 import "../styles/global.css"; 
-
 
 const menuLinksHeaderIndex = [
 	{text:"Vacantes", href: "#vacantes"},
@@ -12,8 +11,8 @@ const menuLinksHeaderIndex = [
 ---
 
 <Layout title="Pagina de Inicio">
-	<Header links={menuLinksHeaderIndex}>
+	<HeaderMenu links={menuLinksHeaderIndex}>
 
-	</Header>
+	</HeaderMenu>
 
 </Layout>
